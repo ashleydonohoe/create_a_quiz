@@ -57,8 +57,6 @@ def ask_question(question, answers, answer_blanks, blanks_index, answers_index):
 def play_game():
 	# grabs user input for level and grabs prompt from the level_chooser function
 	level = raw_input("Choose a level: easy, medium, or hard: ")
-	if level != "easy" or level != "medium" or level != "hard":
-		level = raw_input("Sorry, that was not a valid choice. Choose a level: easy, medium, or hard: ")
 	question = level_chooser(level)
 	print question
 
@@ -76,3 +74,7 @@ def play_game():
 
 # starts the game upon running this Python file
 play_game()
+
+
+
+
